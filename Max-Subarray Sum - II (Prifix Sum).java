@@ -16,7 +16,7 @@ public class prefix {
             int start =i;
             for(int j=i;j<numbers.length;j++){
                 int end =j;
-                currentsum = start == 0 ? prefix[end] : prefix[end] -prefix[end-1] ;
+                currentsum = start == 0 ? prefix[end] : prefix[end] -prefix[start-1] ;
                 if(maxsum<currentsum ){
                    maxsum = currentsum ;
                 } 
